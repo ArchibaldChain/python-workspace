@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ace210ec-a4d7-432d-ab5d-18e42041de86" name="Default" comment="" />
+    <list default="true" id="ace210ec-a4d7-432d-ab5d-18e42041de86" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Workspace for Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Workspace for Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state relative-caret-position="-331">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -41,6 +47,9 @@
     <dirStrings>
       <dir>C:\Programing\Python\Workspace for Python\chardet-3.0.4</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Histogram try/Histogram.py" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +92,6 @@
         <option value="$PROJECT_DIR$/studying file/Data manage/StraightMovement.py" />
         <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/AVL_binarySearchTree.py" />
         <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Graph.py" />
-        <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Graph.py" />
         <option value="$PROJECT_DIR$/studying file/prd.py" />
         <option value="$PROJECT_DIR$/studying file/file2.py" />
         <option value="$PROJECT_DIR$/studying file/file3.py" />
@@ -94,6 +102,7 @@
         <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/TopologicalSort2.py" />
         <option value="$PROJECT_DIR$/studying file/Data manage/PhysicsDataManagement.py" />
         <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Mutilist.py" />
+        <option value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Graph.py" />
       </list>
     </option>
   </component>
@@ -128,6 +137,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -174,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Programing/Python/Workspace for Python/studying file/Data manage/StraightMovement.py" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/TopologySort.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/studying file/Error test/Textwrtest.py" />
   </component>
@@ -197,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.file2">
+  <component name="RunManager" selected="Python.Graph">
     <configuration name="Dijsktra'sShortestPath" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Workspace for Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,6 +221,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Dijsktra'sShortestPath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Workspace for Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,31 +271,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PhysicsDataManagement" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TopologySort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Workspace for Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/studying file/Data manage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/studying file/Data manage/PhysicsDataManagement.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TopologySort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Workspace for Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -302,18 +315,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.TopologySort" />
-      <item itemvalue="Python.PhysicsDataManagement" />
       <item itemvalue="Python.KruskalMinimumSpanningTree" />
       <item itemvalue="Python.Dijsktra'sShortestPath" />
       <item itemvalue="Python.file2" />
+      <item itemvalue="Python.Graph" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Graph" />
         <item itemvalue="Python.file2" />
         <item itemvalue="Python.TopologySort" />
         <item itemvalue="Python.Dijsktra'sShortestPath" />
         <item itemvalue="Python.KruskalMinimumSpanningTree" />
-        <item itemvalue="Python.PhysicsDataManagement" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +336,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20730738" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20730738" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -332,9 +345,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.5397351" weight="0.25662252" />
-      <window_info anchor="bottom" x="159" y="47" width="963" height="626" id="Run" order="9" weight="0.2831126" />
+      <window_info anchor="bottom" x="159" y="47" width="963" height="626" id="Run" order="9" weight="0.2819237" />
       <window_info anchor="bottom" x="340" y="121" width="688" height="287" id="Terminal" order="10" sideWeight="0.4602649" side_tool="true" type="FLOATING" weight="0.47516558" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -550,8 +563,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/studying file/Data Structure and Algorithm Analysis/Week14/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="-331">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
