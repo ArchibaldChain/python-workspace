@@ -5,7 +5,7 @@ import numpy as np
 def prepare_inputs(inputs):
     # TODO: create a 2-dimensional ndarray from the given 1-dimensional list;
     #       assign it to input_array
-    input_array = np.array(inputs)
+    input_array = np.array([inputs])
 
     # TODO: find the minimum value in input_array and subtract that
     #       value from all the elements of input_array. Store the
@@ -27,7 +27,7 @@ def multiply_inputs(m1, m2):
     #
     #       Return False if the shapes cannot be used for matrix
     #       multiplication. You may not use a transpose
-    if m1.shape[1] != m2.shape[0]:
+    if m1.shape[1] != m2.shape[0] and m1.shape[0] != m1.shape[1]:
         return False
     pass
 
@@ -35,7 +35,10 @@ def multiply_inputs(m1, m2):
     #       of m1 and m2 and return it. Do not use a transpose,
     #       but you swap their order if necessary
 
-    return np.matmul(m1,m2)
+    if m1.shape[1] == m2.shape[0]:
+        return np.matmul(m1,m2)
+    else:
+        return np.matmul(m2,m1)
     pass
 
 
