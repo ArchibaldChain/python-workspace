@@ -1,7 +1,8 @@
 # %% [markdown]
 # - Request
 # - Response
-# -
+# - site anslysis
+# > re BeautifulSoup, pyquery, lxml
 # - save data
 # %%
 from selenium import webdriver
