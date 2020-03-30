@@ -1,10 +1,12 @@
 # %% [markdown]
+# Four step of spider
 # - Request
 # - Response
 # - site anslysis
 # > re BeautifulSoup, pyquery, lxml
 # - save data
 # %%
+import driver
 from selenium import webdriver
 import requests
 # %%
