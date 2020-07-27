@@ -2,7 +2,7 @@ import cv2
 import random
 import math
 
-project_str = "I:/Programming/Cpp_workspace/CppLearningCode/CppAssignment/opencv_test/sample_code/pictures/"
+project_str = "I:\Programming\Python\python-workspace\opencv_sample_code\pictures/"
 bird1 = project_str + "bird1.png"
 bird2 = project_str + "bird2.png"
 bird3 = project_str + "bird3.png"
@@ -28,7 +28,7 @@ class FlppyBird:
         b3 = cv2.resize(b3, (2*b3.shape[0], 2*b3.shape[1]))
         self.bird = [b1, b2, b3]
 
-        self.tube_wide = self.f_length/15  # self.tub1.shape[0]
+        self.tube_wide = self.f_length/12  # self.tub1.shape[0]
         self.gate_size = self.f_height/4
 
         # Get tube pic
@@ -73,13 +73,13 @@ class FlppyBird:
 
     def drawTube(self, t, frame):
         a, b = t.getUpTube()
-        cv2.rectangle(frame, a, b, (255, 255, 255), 2)
-        # leftUp = (b[0] - self.tub1.shape[1], b[1] - self.tub2.shape[0])
-        # imgCopy(frame, self.tub1, leftUp)
+        # cv2.rectangle(frame, a, b, (255, 255, 255), 2)
+        leftUp = (b[0] - self.tub1.shape[1], b[1] - self.tub2.shape[0])
+        imgCopy(frame, self.tub1, leftUp)
 
         a, b = t.getLowTube(self.f_height)
-        cv2.rectangle(frame, a, b, (255, 255, 255), 2)
-        # imgCopy(frame, self.tub2, a)
+        # cv2.rectangle(frame, a, b, (255, 255, 255), 2)
+        imgCopy(frame, self.tub2, a)
         return frame
 
     def generateGate(self):
@@ -116,7 +116,7 @@ class Gate:
         return (self.x1, self.y2), (self.x2, m)
 
     def moveLeft(self):
-        steplen = 5
+        steplen = 15
         self.x1 -= steplen
         self.x2 -= steplen
 
