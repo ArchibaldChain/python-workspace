@@ -77,7 +77,7 @@ class KNearestNeighbor(object):
                 #####################################################################
                 # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-                pass
+                dists[i,j] = np.sqrt(np.sum(np.square(X[i,:] - self.X_train[j,:])))
 
                 # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists
@@ -101,7 +101,10 @@ class KNearestNeighbor(object):
             #######################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            pass
+            diff = X[i,:] - self.X_train
+            dists[i,:] = np.sqrt(np.sum(np.square(diff.T), axis = 0))
+            
+
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists
@@ -131,7 +134,10 @@ class KNearestNeighbor(object):
         #########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-        pass
+        mid = X.dot(self.X_train.T)
+        left = np.sum(X**2, axis = 1)
+        right = np.sum(self.X_train**2, axis = 1)
+        dists = np.array(np.sqrt(np.matrix(left).T - 2*mid + right))
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists
@@ -164,7 +170,8 @@ class KNearestNeighbor(object):
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            pass
+            dist_sort_ind = np.argsort(dists[i,:])
+            closest_y = self.y_train[dist_sort_ind[:k]]
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
             #########################################################################
@@ -176,7 +183,13 @@ class KNearestNeighbor(object):
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            pass
+            temp = np.array(closest_y)
+            y_pred[i] = np.bincount(temp).argmax()
+            # closest_y_set = set(closest_y)
+            # for ind, item in enumerate(closest_y_set):
+            #     y_pred[i] = item
+            #     if ind == 0:
+            #         break
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 

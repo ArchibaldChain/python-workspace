@@ -54,7 +54,19 @@ def svm_loss_naive(W, X, y, reg):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    pass
+    delta = 1
+    for i in range(num_train):
+        scores = X[i].dot(W)
+        correct_class_score = scores[y[i]]
+        for j in range(num_classes):
+            margin = scores[j] - correct_class_score + delta
+            if j != y[j]:
+                if margin > 0:
+                    dW[:,j] += X[i,:]
+                    dW[:,y[j]] -= X[i,:]
+
+    dW /= num_train
+    dW += 2*reg*W
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     
@@ -77,9 +89,19 @@ def svm_loss_vectorized(W, X, y, reg):
     # result in loss.                                                           #
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    delta = 1
+    Scores = X.dot(W)
+    num_train = X.shape[0]
+    num_classes = W.shape[1]
 
-    pass
+    scores_correct = Scores[range(num_train), y] # (N,) dimension
+    scores_correct = np.reshape(scores_correct, (len(scores_correct), 1)) # (N,1) dimension
+    margin = Scores - scores_correct + delta * np.ones(Scores.shape) # N x C
 
+    margin[margin < 0] = 0 # N x C
+    margin[range(num_train), y] = 0 # N x C
+    loss += margin.sum()/num_train
+    loss += reg * np.linalg.norm(W,2)
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
     #############################################################################
@@ -92,8 +114,12 @@ def svm_loss_vectorized(W, X, y, reg):
     # loss.                                                                     #
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    margin[margin > 0] = 1  # N x C
+    margin[range(margin.shape[0]), y] = -margin.sum(axis = 1)
 
-    pass
+    dW = (X.T).dot(margin)/num_train # D by C
+    dW += 2*reg*W
+
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
