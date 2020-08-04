@@ -1,0 +1,1 @@
+define("kg/tb-nav/2.5.11/lib/reporter/index",[],function(r,e,n){n.exports={send:function(r){window.JSTracker2=window.JSTracker2||[];var e="https://jstracker.www.taobao.com/nav/"+r.category;window.JSTracker2.push({url:e,msg:r.msg})}}});
